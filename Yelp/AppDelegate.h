@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  Yelp
 //
-//  Created by Timothy Lee on 3/21/14.
+//  Created by Pierpaolo Baccichet on 6/17/14.
 //  Copyright (c) 2014 codepath. All rights reserved.
 //
 

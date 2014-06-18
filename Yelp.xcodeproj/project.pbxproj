@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		420474F618DC299500E88E07 /* YelpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 420474F518DC299500E88E07 /* YelpClient.m */; };
-		420474FB18DC2B2100E88E07 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 420474F918DC2B2100E88E07 /* MainViewController.m */; };
-		420474FC18DC2B2100E88E07 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420474FA18DC2B2100E88E07 /* MainViewController.xib */; };
 		42FD6C4B18DC286B000BF2B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD6C4A18DC286B000BF2B9 /* Foundation.framework */; };
 		42FD6C4D18DC286B000BF2B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD6C4C18DC286B000BF2B9 /* CoreGraphics.framework */; };
 		42FD6C4F18DC286B000BF2B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FD6C4E18DC286B000BF2B9 /* UIKit.framework */; };
@@ -23,6 +21,15 @@
 		42FD6C6E18DC286B000BF2B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42FD6C6C18DC286B000BF2B9 /* InfoPlist.strings */; };
 		42FD6C7018DC286B000BF2B9 /* YelpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FD6C6F18DC286B000BF2B9 /* YelpTests.m */; };
 		63E591F41F684901AF8C1C19 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEC6D18C14F46F8AF2EA320 /* libPods.a */; };
+		B364E247194DE12C006FEEED /* RestaurantListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B364E245194DE12C006FEEED /* RestaurantListViewController.m */; };
+		B364E248194DE12C006FEEED /* RestaurantListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B364E246194DE12C006FEEED /* RestaurantListViewController.xib */; };
+		B364E24C194DF498006FEEED /* RestaurantInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B364E24B194DF498006FEEED /* RestaurantInfo.m */; };
+		B364E2CE1950E6A3006FEEED /* FilterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B364E2CD1950E6A3006FEEED /* FilterInfo.m */; };
+		B364E2E619511540006FEEED /* RestaurantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B364E2E419511540006FEEED /* RestaurantCell.m */; };
+		B364E2E719511540006FEEED /* RestaurantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B364E2E519511540006FEEED /* RestaurantCell.xib */; };
+		B364E2F01951269B006FEEED /* FiltersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B364E2EE1951269B006FEEED /* FiltersViewController.m */; };
+		B364E2F11951269B006FEEED /* FiltersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B364E2EF1951269B006FEEED /* FiltersViewController.xib */; };
+		B364E2F5195134AE006FEEED /* expand_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B364E2F4195134AE006FEEED /* expand_icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +45,6 @@
 /* Begin PBXFileReference section */
 		420474F418DC299500E88E07 /* YelpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YelpClient.h; sourceTree = "<group>"; };
 		420474F518DC299500E88E07 /* YelpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YelpClient.m; sourceTree = "<group>"; };
-		420474F818DC2B2100E88E07 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		420474F918DC2B2100E88E07 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		420474FA18DC2B2100E88E07 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		42FD6C4718DC286B000BF2B9 /* Yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42FD6C4A18DC286B000BF2B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		42FD6C4C18DC286B000BF2B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,6 +63,21 @@
 		42FD6C6F18DC286B000BF2B9 /* YelpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YelpTests.m; sourceTree = "<group>"; };
 		8436EC1AAEE1439D997D29F7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		9DEC6D18C14F46F8AF2EA320 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B364E244194DE12C006FEEED /* RestaurantListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantListViewController.h; sourceTree = "<group>"; };
+		B364E245194DE12C006FEEED /* RestaurantListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantListViewController.m; sourceTree = "<group>"; };
+		B364E246194DE12C006FEEED /* RestaurantListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantListViewController.xib; sourceTree = "<group>"; };
+		B364E24A194DF498006FEEED /* RestaurantInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantInfo.h; sourceTree = "<group>"; };
+		B364E24B194DF498006FEEED /* RestaurantInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantInfo.m; sourceTree = "<group>"; };
+		B364E2B0194FC614006FEEED /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		B364E2CC1950E6A3006FEEED /* FilterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterInfo.h; sourceTree = "<group>"; };
+		B364E2CD1950E6A3006FEEED /* FilterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterInfo.m; sourceTree = "<group>"; };
+		B364E2E319511540006FEEED /* RestaurantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantCell.h; sourceTree = "<group>"; };
+		B364E2E419511540006FEEED /* RestaurantCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantCell.m; sourceTree = "<group>"; };
+		B364E2E519511540006FEEED /* RestaurantCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestaurantCell.xib; sourceTree = "<group>"; };
+		B364E2ED1951269B006FEEED /* FiltersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiltersViewController.h; sourceTree = "<group>"; };
+		B364E2EE1951269B006FEEED /* FiltersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiltersViewController.m; sourceTree = "<group>"; };
+		B364E2EF1951269B006FEEED /* FiltersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiltersViewController.xib; sourceTree = "<group>"; };
+		B364E2F4195134AE006FEEED /* expand_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = expand_icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +110,7 @@
 			children = (
 				420474F418DC299500E88E07 /* YelpClient.h */,
 				420474F518DC299500E88E07 /* YelpClient.m */,
+				B364E2B0194FC614006FEEED /* Utils.h */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -98,9 +118,12 @@
 		420474F718DC2A9200E88E07 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				420474F818DC2B2100E88E07 /* MainViewController.h */,
-				420474F918DC2B2100E88E07 /* MainViewController.m */,
-				420474FA18DC2B2100E88E07 /* MainViewController.xib */,
+				B364E244194DE12C006FEEED /* RestaurantListViewController.h */,
+				B364E245194DE12C006FEEED /* RestaurantListViewController.m */,
+				B364E246194DE12C006FEEED /* RestaurantListViewController.xib */,
+				B364E2ED1951269B006FEEED /* FiltersViewController.h */,
+				B364E2EE1951269B006FEEED /* FiltersViewController.m */,
+				B364E2EF1951269B006FEEED /* FiltersViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -140,6 +163,8 @@
 		42FD6C5018DC286B000BF2B9 /* Yelp */ = {
 			isa = PBXGroup;
 			children = (
+				B364E249194DE4BE006FEEED /* Model */,
+				B364E239194D5716006FEEED /* Views */,
 				420474F318DC297600E88E07 /* API */,
 				420474F718DC2A9200E88E07 /* View Controllers */,
 				42FD6C5918DC286B000BF2B9 /* AppDelegate.h */,
@@ -153,6 +178,7 @@
 		42FD6C5118DC286B000BF2B9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B364E2C71950D725006FEEED /* Icons */,
 				42FD6C5218DC286B000BF2B9 /* Yelp-Info.plist */,
 				42FD6C5318DC286B000BF2B9 /* InfoPlist.strings */,
 				42FD6C5618DC286B000BF2B9 /* main.m */,
@@ -177,6 +203,35 @@
 				42FD6C6C18DC286B000BF2B9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B364E239194D5716006FEEED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B364E2E319511540006FEEED /* RestaurantCell.h */,
+				B364E2E419511540006FEEED /* RestaurantCell.m */,
+				B364E2E519511540006FEEED /* RestaurantCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B364E249194DE4BE006FEEED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B364E24A194DF498006FEEED /* RestaurantInfo.h */,
+				B364E24B194DF498006FEEED /* RestaurantInfo.m */,
+				B364E2CC1950E6A3006FEEED /* FilterInfo.h */,
+				B364E2CD1950E6A3006FEEED /* FilterInfo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B364E2C71950D725006FEEED /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				B364E2F4195134AE006FEEED /* expand_icon.png */,
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +311,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B364E2F5195134AE006FEEED /* expand_icon.png in Resources */,
 				42FD6C5518DC286B000BF2B9 /* InfoPlist.strings in Resources */,
-				420474FC18DC2B2100E88E07 /* MainViewController.xib in Resources */,
+				B364E2F11951269B006FEEED /* FiltersViewController.xib in Resources */,
 				42FD6C5D18DC286B000BF2B9 /* Images.xcassets in Resources */,
+				B364E2E719511540006FEEED /* RestaurantCell.xib in Resources */,
+				B364E248194DE12C006FEEED /* RestaurantListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,10 +368,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B364E2E619511540006FEEED /* RestaurantCell.m in Sources */,
 				42FD6C5B18DC286B000BF2B9 /* AppDelegate.m in Sources */,
+				B364E2F01951269B006FEEED /* FiltersViewController.m in Sources */,
+				B364E247194DE12C006FEEED /* RestaurantListViewController.m in Sources */,
 				42FD6C5718DC286B000BF2B9 /* main.m in Sources */,
 				420474F618DC299500E88E07 /* YelpClient.m in Sources */,
-				420474FB18DC2B2100E88E07 /* MainViewController.m in Sources */,
+				B364E24C194DF498006FEEED /* RestaurantInfo.m in Sources */,
+				B364E2CE1950E6A3006FEEED /* FilterInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

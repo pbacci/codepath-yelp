@@ -2,22 +2,33 @@
 //  AppDelegate.m
 //  Yelp
 //
-//  Created by Timothy Lee on 3/21/14.
+//  Created by Pierpaolo Baccichet on 6/17/14.
 //  Copyright (c) 2014 codepath. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
+#import "Utils.h"
+#import "RestaurantListViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    self.window.rootViewController = [[MainViewController alloc] init];
-    
-    self.window.backgroundColor = [UIColor whiteColor];
+
+    // set styles for status bar and nav bar
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.85 green:0.02 blue:0.02 alpha:1]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    UIViewController *vc = [[RestaurantListViewController alloc] init];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    nvc.navigationBar.translucent = false;
+    self.window.rootViewController = nvc;
+
     [self.window makeKeyAndVisible];
     return YES;
 }
