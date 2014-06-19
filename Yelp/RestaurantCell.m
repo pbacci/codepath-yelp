@@ -44,16 +44,9 @@
     [l setCornerRadius:5.0];
 
     self.nameLabel.text = [NSString stringWithFormat:@"%d. %@", rowId + 1, restaurantInfo.name];
-    [self.nameLabel sizeToFit];
-
     self.addressLabel.text = [restaurantInfo formatAddress];
-    [self.addressLabel sizeToFit];
-
     self.categoriesLabel.text = [restaurantInfo formatCategoryString];
-    [self.addressLabel sizeToFit];
-
     self.reviewsLabel.text = [NSString stringWithFormat:@"%d reviews",[restaurantInfo.reviewCount intValue]];
-    [self.reviewsLabel sizeToFit];
 }
 
 @end

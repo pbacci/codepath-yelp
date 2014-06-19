@@ -20,7 +20,7 @@ Time spent: 14-16 hours
 
 ###Known issues
 
- * Scrolling up and down in the main table view causes the layout to mess up. Unfortunately I did not get to figure why this is happening in time
+ * Scrolling up and down in the main table view causes the layout to mess up. Unfortunately I did not get to figure why this is happening in time (Resolved thanks to Tim)
  * In general, I ran out of time so the code is definitely messier than I'd like it to be
 
 ###Walkthrough
