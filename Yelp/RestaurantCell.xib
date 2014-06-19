@@ -50,7 +50,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# Reviews" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9y-n2-ToD">
-                        <rect key="frame" x="171" y="23" width="144" height="21"/>
+                        <rect key="frame" x="171" y="27" width="144" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="O2z-Xg-86S"/>
@@ -73,7 +73,7 @@
                     <constraint firstAttribute="trailing" secondItem="xmh-V8-hax" secondAttribute="trailing" constant="5" id="Umd-T7-Oih"/>
                     <constraint firstAttribute="trailing" secondItem="p9y-n2-ToD" secondAttribute="trailing" constant="5" id="X1A-jm-GEC"/>
                     <constraint firstItem="o2s-CI-k5P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Xhl-de-jHo"/>
-                    <constraint firstItem="g4T-HO-gYc" firstAttribute="top" secondItem="p9y-n2-ToD" secondAttribute="bottom" constant="24" id="gFL-Qu-T6I"/>
+                    <constraint firstItem="g4T-HO-gYc" firstAttribute="top" secondItem="p9y-n2-ToD" secondAttribute="bottom" constant="20" id="gFL-Qu-T6I"/>
                     <constraint firstAttribute="bottom" secondItem="g4T-HO-gYc" secondAttribute="bottom" constant="5" id="ibC-fe-typ"/>
                     <constraint firstItem="3qO-c3-nFF" firstAttribute="leading" secondItem="o2s-CI-k5P" secondAttribute="trailing" constant="5" id="m5a-sX-1BF"/>
                     <constraint firstItem="xmh-V8-hax" firstAttribute="top" secondItem="vKL-DE-hj1" secondAttribute="bottom" constant="2" id="oae-g6-34I"/>
